@@ -1,0 +1,153 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    background-color: #f5f5f5;
+    height: 100vh;
+    display: flex;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+#confirmSelection,
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+}
+#confirmSelection:hover,
+button[type="submit"]:hover {
+    background-color: #388e3c;
+}
+
+.logout-btn {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 22px;
+}
+
+.logout-btn:hover {
+    background-color: #388e3c;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+}
+
+.dashboard {
+    width: 20%;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.dashboard nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px; 
+}
+
+.dashboard nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 15px;
+}
+
+
+.dashboard nav a:hover {
+    background-color: #388e3c; 
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    position: relative; 
+}
+
+.content h2 {
+    text-align: center;
+    color: #333;
+}
+
+.back-btn {
+    color: #4CAF50;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input,
+select,
+fieldset {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+fieldset#crop_names_fieldset {
+    margin-bottom: 20px;
+}
+
+#clearSelection {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 auto;
+}
+
+#clearSelection:hover {
+    background-color: #d32f2f;
+}
+
+
+#sizeUnitsFields label {
+    display: inline-block;
+    width: 100px;
+}
+
+#sizeUnitsFields input[type="text"],
+#sizeUnitsFields select {
+    width: 1100px;
+}
+
+#sizeUnitsFields br {
+    margin-bottom: 10px;
+}
+

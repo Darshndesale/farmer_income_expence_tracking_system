@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    height: 100vh;
+    display: flex;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+}
+
+.dashboard {
+    width: 20%;
+    background-color: #4CAF50; 
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard h1 {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.dashboard nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+.dashboard nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard nav a:hover {
+    background-color: #388e3c; 
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+.back-btn {
+    color: #4CAF50;
+    cursor: pointer;
+    font-size: 20px ;
+}
+.content h1 {
+    font-size: 33px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.dashboard-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-item h3 {
+    color: #388e3c;
+    margin-bottom: 10px;
+}
+
+.dashboard-item p {
+    color: #666;
+}
+
+.dashboard-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.logout-btn {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 3px;
+    padding: 12px 22px;
+}
+
+.logout-btn:hover {
+    background-color: #388e3c;
+}
